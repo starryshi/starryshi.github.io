@@ -47,7 +47,7 @@
       <li class="menu-item menu-item-home">
         <a href="/">
           <i class="menu-item-icon icon-home"></i> <br />
-          首頁
+          Accueil
         </a>
       </li>
     
@@ -55,7 +55,7 @@
       <li class="menu-item menu-item-archives">
         <a href="/archives">
           <i class="menu-item-icon icon-archives"></i> <br />
-          歸檔
+          Archives
         </a>
       </li>
     
@@ -63,7 +63,7 @@
       <li class="menu-item menu-item-tags">
         <a href="/tags">
           <i class="menu-item-icon icon-tags"></i> <br />
-          標籤
+          Tags
         </a>
       </li>
     
@@ -71,7 +71,7 @@
       <li class="menu-item menu-item-about">
         <a href="/about">
           <i class="menu-item-icon icon-about"></i> <br />
-          關於
+          A propos
         </a>
       </li>
     
@@ -110,14 +110,14 @@
       <div class="post-meta">
         <span class="post-time">
           
-            發表於 2015-03-18
+            Posté le 2015-03-18
           
         </span>
 
         
           
             <span class="post-category">
-              &nbsp; | &nbsp; 分類於
+              &nbsp; | &nbsp; In
               
                 <a href="/categories/前端/">前端</a>
 
@@ -142,9 +142,16 @@
         
 
         
-          <h2 id="方法一（DIV）">方法一（DIV）</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"box"</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t_l"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t_m"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span> </span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t_r"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m_l"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m_m"</span>&gt;</span>内容区<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m_r"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b_l"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b_m"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b_r"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.box</span><span class="rules">&#123;<span class="rule"><span class="attribute">overflow</span>:<span class="value">hidden</span></span>;<span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;<span class="rule">&#125;</span></span></span><br><span class="line"><span class="class">.t_l</span>,<span class="class">.t_m</span>,<span class="class">.t_r</span>,<span class="class">.b_l</span>,<span class="class">.b_m</span>,<span class="class">.b_r</span>,<span class="class">.m_l</span>,<span class="class">.m_r</span> <span class="rules">&#123;<span class="rule"><span class="attribute">position</span>:<span class="value">absolute</span></span>;<span class="rule"><span class="attribute">z-index</span>:<span class="value"><span class="number">2</span></span></span>;<span class="rule">&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class">.t_m</span><span class="rules">&#123; <span class="rule"><span class="attribute">z-index</span>:<span class="value"><span class="number">1</span></span></span>;<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100%</span></span></span>; <span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
-<h2 id="方法二（li)">方法二（li)</h2>
+          <h2 id="方法一（DIV）">方法一（DIV）</h2><pre><code>首先想到的是用<span class="keyword">div</span>元素和<span class="keyword">float</span>属性实现。
+</code></pre><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"box"</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t1"</span>&gt;</span>1<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t2"</span>&gt;</span>2<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"t3"</span>&gt;</span>3<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m1"</span>&gt;</span>4<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m2"</span>&gt;</span>5<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"m3"</span>&gt;</span>6<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b1"</span>&gt;</span>7<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b2"</span>&gt;</span>8<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"> 	<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"b3"</span>&gt;</span>9<span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>样式层：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">*<span class="rules">&#123;<span class="rule"><span class="attribute">margin</span>:<span class="value"> <span class="number">0px</span></span></span>;<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">0px</span></span></span>;<span class="rule">&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class">.box</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">overflow</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100px</span></span></span>;<span class="rule"><span class="attribute">height</span>:<span class="value"><span class="number">100px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">50px</span> auto</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">10px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">background</span>:<span class="value"><span class="hexcolor">#F34703</span></span></span>;<span class="rule">&#125;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class">.t1</span>,<span class="class">.t2</span>,<span class="class">.t3</span>,<span class="class">.m1</span>,<span class="class">.m2</span>,<span class="class">.m3</span>,<span class="class">.b1</span>,<span class="class">.b2</span>,<span class="class">.b3</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">30px</span></span></span>;<span class="rule"><span class="attribute">height</span>:<span class="value"> <span class="number">30px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">1px</span> black solid</span></span>;</span></span><br></pre></td></tr></table></figure></p>
+<p>效果：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/nine-grid%2002.PNG" alt="此处输入图片的描述"></p>
+<p><a href="http://www.cnblogs.com/binyong/archive/2009/06/18/1505608.html" target="_blank" rel="external">冰极峰教程系列之一：九宫格基本布局</a><br>这里介绍的Div实现效果要好很多。  </p>
+<h2 id="方法二（li)">方法二（li)</h2><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"fn-clear"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span> <span class="attribute">class</span>=<span class="value">"1"</span>&gt;</span><span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>样式层：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">ul</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">165px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">padding</span>:<span class="value"> <span class="number">30px</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="tag">ul</span> <span class="tag">li</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">float</span>:<span class="value"> left</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">list-style</span>:<span class="value"> none</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="tag">li</span> <span class="tag">a</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value">  block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">width</span>:<span class="value">  <span class="number">50px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">height</span>:<span class="value">  <span class="number">50px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border</span>:<span class="value">  <span class="number">5px</span> solid blue</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">margin-left</span>:<span class="value">  -<span class="number">5px</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">margin-top</span>:<span class="value">  -<span class="number">5px</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="tag">a</span><span class="pseudo">:hover</span> <span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">position</span>:<span class="value"> relative</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">border-color</span>:<span class="value"> red</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">z-index</span>:<span class="value"> <span class="number">100</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="class">.fn-clear</span><span class="pseudo">:after</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule"><span class="attribute">visibility</span>:<span class="value"> hidden</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">display</span>:<span class="value"> block</span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">content</span>:<span class="value"> <span class="string">' '</span></span></span>;</span><br><span class="line">	<span class="rule"><span class="attribute">clear</span>:<span class="value"> both</span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br><span class="line"><span class="class">.fn-clear</span><span class="rules">&#123;</span><br><span class="line">	<span class="rule">*<span class="attribute">zoom</span>:<span class="value"> <span class="number">1</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure></p>
+<p>效果：</p>
+<p><img src="http://7xidqg.com1.z0.glb.clouddn.com/nine-grid%2003.PNG" alt="此处输入图片的描述"></p>
+
         
       </div>
     
@@ -215,10 +222,10 @@
     
       <ul class="sidebar-nav motion-element">
         <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-          文章目錄
+          Table Des Matières
         </li>
         <li class="sidebar-nav-overview" data-target="site-overview">
-          本站概覽
+          Ensemble
         </li>
       </ul>
     
@@ -232,15 +239,15 @@
       <div class="site-state motion-element">
         <div class="site-state-item site-state-posts">
           <span class="site-state-item-count">3</span>
-          <span class="site-state-item-name">文章</span>
+          <span class="site-state-item-name">articles</span>
         </div>
         <div class="site-state-item site-state-tags">
             <span class="site-state-item-count">3</span>
-            <span class="site-state-item-name">標籤</span>
+            <span class="site-state-item-name">tags</span>
         </div>
         <div class="site-state-item site-state-pages">
             <span class="site-state-item-count">2</span>
-            <span class="site-state-item-name">頁面</span>
+            <span class="site-state-item-name">pages</span>
         </div>
       </div>
 
@@ -288,11 +295,11 @@
 </div>
 
 <div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 強力驅動
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
-  主題 -
+  Thème -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
     NexT
   </a>
