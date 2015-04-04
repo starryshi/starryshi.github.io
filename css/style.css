@@ -390,9 +390,7 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   z-index: -1;
-}
-#banner {
-  background: url("http://fh-1.qiniudn.com/banner.jpg") center;
+  background: url("http://7xidqg.com1.z0.glb.clouddn.com/cai_ling_dai_005_副本.jpg") center #000;
 }
 #header-title {
   text-align: center;
@@ -407,7 +405,7 @@ body {
   text-decoration: none;
   color: #fff;
   font-weight: 300;
-  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px #000, 2px 2px 4px #000;
 }
 #logo {
   font-size: 40px;
@@ -418,6 +416,7 @@ body {
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 1px;
+  text-shadow: 2px 2px 3px #000, 2px 2px 3px #000;
 }
 #subtitle-wrap {
   margin-top: 16px;
