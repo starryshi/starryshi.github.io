@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Starry&#39;s Blog</title>
+  <title>Node.js+express4+MongoDB建站实例（一） | Starry&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Starry's Blog">
-<meta property="og:url" content="http://starryshi.com/tags/前端/index.html">
+  <meta name="description" content="开发环境Win-32nodeJs v0.10.36MongoDB v2.6.5Express v4.12.1（express查询版本 –V，注意大写）
+下载与安装——MongoDBMongoDB-win32 下载地址：https://www.mongodb.org/dl/win32/i386下载之后根据提示点击安装即可，我的安装路径是:D:\Program Files\MongoDB">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Node.js+express4+MongoDB建站实例（一）">
+<meta property="og:url" content="http://starryshi.com/2015/04/25/Node.js+express4+MongoDB建站实例（一）/index.html">
 <meta property="og:site_name" content="Starry's Blog">
-<meta property="og:description">
+<meta property="og:description" content="开发环境Win-32nodeJs v0.10.36MongoDB v2.6.5Express v4.12.1（express查询版本 –V，注意大写）
+下载与安装——MongoDBMongoDB-win32 下载地址：https://www.mongodb.org/dl/win32/i386下载之后根据提示点击安装即可，我的安装路径是:D:\Program Files\MongoDB">
+<meta property="og:image" content="http://7xidqg.com1.z0.glb.clouddn.com/1.png">
+<meta property="og:image" content="http://7xidqg.com1.z0.glb.clouddn.com/2.png">
+<meta property="og:image" content="http://7xidqg.com1.z0.glb.clouddn.com/3.png">
+<meta property="og:image" content="http://7xidqg.com1.z0.glb.clouddn.com/4.png">
+<meta property="og:image" content="http://7xidqg.com1.z0.glb.clouddn.com/5.png">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Starry's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Node.js+express4+MongoDB建站实例（一）">
+<meta name="twitter:description" content="开发环境Win-32nodeJs v0.10.36MongoDB v2.6.5Express v4.12.1（express查询版本 –V，注意大写）
+下载与安装——MongoDBMongoDB-win32 下载地址：https://www.mongodb.org/dl/win32/i386下载之后根据提示点击安装即可，我的安装路径是:D:\Program Files\MongoDB">
   
     <link rel="alternative" href="/atom.xml" title="Starry&#39;s Blog" type="application/atom+xml">
   
@@ -77,43 +85,86 @@ var _hmt = _hmt || [];
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
+        <section id="main"><article id="post-Node.js+express4+MongoDB建站实例（一）" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/03/18/九宫格/" class="archive-article-date">
-  <time datetime="2015-03-18T12:22:24.000Z" itemprop="datePublished">3月 18</time>
+<a href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" class="article-date">
+  <time datetime="2015-04-25T03:45:47.000Z" itemprop="datePublished">2015-04-25</time>
 </a>
 
 
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/18/九宫格/">九宫格</a>
+    <h1 class="article-title" itemprop="name">
+      Node.js+express4+MongoDB建站实例（一）
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		
+        <h2 id="开发环境">开发环境</h2><p>Win-32<br>nodeJs v0.10.36<br>MongoDB v2.6.5<br>Express v4.12.1（express查询版本 –V，注意大写）</p>
+<h2 id="下载与安装——MongoDB">下载与安装——MongoDB</h2><p>MongoDB-win32 下载地址：<a href="https://www.mongodb.org/dl/win32/i386" target="_blank" rel="external">https://www.mongodb.org/dl/win32/i386</a><br>下载之后根据提示点击安装即可，我的安装路径是:<br>D:\Program Files\MongoDB<br><a id="more"></a><br>安装之后需要手动创建数据库的存放位置，…\data\db。创建后目录如下：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/1.png" alt=""><br><strong>启动服务：</strong><br>每次启动需要在D:\Program Files\MongoDB\bin目录下输入：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/2.png" alt=""><br><strong>注意：</strong><br>指定目录时,如果文件夹目录中有空格, 就像Program File, 那么整个目录得用双引号引起来；若没有空格，可以写出mongod.exe —dbpath=…\MongoDB\data\db<br>mongod :用于运行数据库服务器的可执行文件名<br>mongo: 用于运行与数据库服务器相连接的客户端的可执行文件名</p>
+<p>验证启动成功，在浏览器输入localhost:27017<br>启动成功界面：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/3.png" alt=""><br>这种每次需要重新输入启动命令的方式比较麻烦，可以将MongoDB做一项windows服务启动，同样在bin目录下输入：<br>D:\Program Files\MongoDB\bin&gt;mongod.exe —dbpath “D:\Program Files\MongoDB\data\db” —logpath “D:\Program Files\MongoDB\data\mydata.log” —logappend —bind_ip 127.0.0.1 —directoryperdb —journal –install<br>输入net start mongodb 直接启动MongoDB服务：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/4.png" alt=""><br>查看windows服务快捷键：services.msc<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/5.png" alt=""></p>
+
+      
+    </div>
+    <footer class="article-footer">
+	  
+	  <!-- 百度分享 Start -->
+	  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	  <!-- 百度分享 End -->
+	  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MongoDB/">MongoDB</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/express/">express</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
+
+	  
+<span>
+更新日期:<time datetime="2015-04-25T03:49:34.000Z" itemprop="dateModified">2015-04-25</time>
+</span>
+
+
+    </footer>
   </div>
-</article>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/04/10/选项卡(DIV+CSS+JavaScript )/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">选项卡实现的两种方式</div>
+    </a>
+  
+</nav>
 
   
-  
-    </div></section>
-  
+</article>
+
+
+
+<!-- 多说评论框 start -->
+
+<section id="comments">
+  <div class="ds-thread"  data-thread-key="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" data-title="Node.js+express4+MongoDB建站实例（一）" data-url="http://starryshi.com/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" id="ds_thread">
+    <noscript>Please enable JavaScript to view the <a href="//duoshuo.com/?ref_noscript">comments powered by duoshuo.</a></noscript>
+  </div>
+</section>
+
+<!-- 多说评论框 end -->
+
 </section>
         
           
@@ -251,6 +302,8 @@ var duoshuoQuery = {short_name:"starryshi"};
 
 
 <!-- 百度分享 start -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","douban","bdysc","sqq","qq","hi","baidu","huaban","youdao","sdo","mail","xg","diandian","fx","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <!-- 百度分享 end -->
 
