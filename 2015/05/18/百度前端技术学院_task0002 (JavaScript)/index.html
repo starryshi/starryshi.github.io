@@ -124,7 +124,7 @@ var _hmt = _hmt || [];
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"><span>文章目录</span></strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在《高性能_JavaScript》中也有详细介绍。"><span class="toc-number">2.</span> <span class="toc-text">在《高性能 JavaScript》中也有详细介绍。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断各种数据类型的方法"><span class="toc-number">3.</span> <span class="toc-text">判断各种数据类型的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#深拷贝VS浅拷贝"><span class="toc-number">4.</span> <span class="toc-text">深拷贝VS浅拷贝</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="##"><span class="toc-number"></span> <span class="toc-text">#</span></a>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断各种数据类型的方法"><span class="toc-number">2.</span> <span class="toc-text">判断各种数据类型的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#深拷贝VS浅拷贝"><span class="toc-number">3.</span> <span class="toc-text">深拷贝VS浅拷贝</span></a></li></ol>
 		
 		</div>
 		
@@ -134,10 +134,11 @@ var _hmt = _hmt || [];
 <li>采用无阻塞下载 JavaScript 脚本的方法：</li>
 <li>使用<code>&lt;script&gt;</code>标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
 <li>使用动态创建的<code>&lt;script&gt;</code>元素来下载并执行代码；</li>
-<li>使用 XHR 对象下载 JavaScript 代码并注入页面中。</li>
+<li>使用 XHR 对象下载 JavaScript 代码并注入页面中。<a id="more"></a>
+详见：<a href="http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html" target="_blank" rel="external">http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html</a><br>在《高性能 JavaScript》中也有详细介绍。</li>
 </ul>
-<p>详见：<a href="http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html" target="_blank" rel="external">http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html</a></p>
-<h2 id="在《高性能_JavaScript》中也有详细介绍。">在《高性能 JavaScript》中也有详细介绍。</h2><h2 id="判断各种数据类型的方法">判断各种数据类型的方法</h2><p><strong>主要区别<code>typeof</code>与<code>instanceof</code>。</strong><br><strong>关于typeof:</strong></p>
+<hr>
+<h2 id="判断各种数据类型的方法">判断各种数据类型的方法</h2><p><strong>主要区别<code>typeof</code>与<code>instanceof</code>。</strong><br><strong>关于typeof:</strong></p>
 <ul>
 <li>typeof一般只能返回如下6种结果：<br>number（任意数字或NaN）,boolean,string,function（函数）,object（NULL,数组，对象）,undefined。</li>
 <li>对于所有对象和数组，typeof运算结果都是“object”。</li>
@@ -155,8 +156,7 @@ var _hmt = _hmt || [];
 <h2 id="深拷贝VS浅拷贝">深拷贝VS浅拷贝</h2><p>ECMAScript变量包含两种不同数据类型的值：基本类型值和引用类型值。基本数据类型是按值访问的，可以操作保存在变量中的实际的值；引用类型的值是保存在内存中的对象，操作对象时，实际上是在操作对象的引用而不是实际的对象。<br>针对不同类型的变量采用不同的复制方式：<br>方式一：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//使用递归来实现一个深度克隆，可以复制一个目标对象，返回一个完整拷贝</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cloneObject</span><span class="params">(src)</span></span>&#123;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">if</span>(<span class="keyword">typeof</span>(src)!=<span class="string">"object"</span>|| src===<span class="literal">null</span>)  <span class="keyword">return</span> src;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span>(src <span class="keyword">instanceof</span> <span class="built_in">Array</span>)&#123;</span><br><span class="line">		<span class="keyword">var</span> o=[];</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i=<span class="number">0</span>;i&lt;src.length;i++)&#123;</span><br><span class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span>(src[i])==<span class="string">"object"</span> &amp;&amp; src[i]!=<span class="literal">null</span>)&#123;</span><br><span class="line">				o[i]=<span class="built_in">arguments</span>.callee(src[i]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				o[i]=src[i];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">else</span>&#123;</span><br><span class="line">		<span class="keyword">var</span> o=&#123;&#125;;</span><br><span class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> src)&#123;</span><br><span class="line">			<span class="keyword">if</span>(<span class="keyword">typeof</span>(src[i])==<span class="string">"object"</span> &amp;&amp; src[i]!=<span class="literal">null</span>)&#123;</span><br><span class="line">				o[i]=<span class="built_in">arguments</span>.callee(src[i]);</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="keyword">else</span>&#123;</span><br><span class="line">				o[i]=src[i];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>参考：<a href="http://qianduanblog.com/post/js-learning-30-object-clone-copy.html" target="_blank" rel="external">http://qianduanblog.com/post/js-learning-30-object-clone-copy.html</a><br>使用hasOwnProperty()获取自定义属性：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">cloneObject</span><span class="params">(src)</span></span>&#123;</span><br><span class="line">	<span class="keyword">var</span> o = src.constructor === <span class="built_in">Array</span> ? [] : &#123;&#125;;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">var</span> i <span class="keyword">in</span> src)&#123;</span><br><span class="line">		<span class="keyword">if</span>(src.hasOwnProperty(i))&#123;</span><br><span class="line">			o[i] = <span class="keyword">typeof</span> src[i] === <span class="string">"object"</span> ? cloneObject(src[i]) : src[i];</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	<span class="keyword">return</span> o;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>方式二：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="built_in">JSON</span>.stringify( src );</span><br><span class="line"><span class="keyword">var</span> o = <span class="built_in">JSON</span>.parse( s );</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h1 id="#">#</h1>
+
       
     </div>
     <footer class="article-footer">
@@ -170,7 +170,7 @@ var _hmt = _hmt || [];
 
 	  
 <span>
-更新日期:<time datetime="2015-07-13T12:22:06.000Z" itemprop="dateModified">2015-07-13</time>
+更新日期:<time datetime="2015-07-13T12:23:14.000Z" itemprop="dateModified">2015-07-13</time>
 </span>
 
 
@@ -218,7 +218,7 @@ var _hmt = _hmt || [];
   <div id="toc" class="toc-aside">
   <h2 class="toc-title">文章目录</h2>
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在《高性能_JavaScript》中也有详细介绍。"><span class="toc-number">2.</span> <span class="toc-text">在《高性能 JavaScript》中也有详细介绍。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断各种数据类型的方法"><span class="toc-number">3.</span> <span class="toc-text">判断各种数据类型的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#深拷贝VS浅拷贝"><span class="toc-number">4.</span> <span class="toc-text">深拷贝VS浅拷贝</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="##"><span class="toc-number"></span> <span class="toc-text">#</span></a>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#判断各种数据类型的方法"><span class="toc-number">2.</span> <span class="toc-text">判断各种数据类型的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#深拷贝VS浅拷贝"><span class="toc-number">3.</span> <span class="toc-text">深拷贝VS浅拷贝</span></a></li></ol>
     
   </div>
 
