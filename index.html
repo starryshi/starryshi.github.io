@@ -294,142 +294,6 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-# 百度前端技术学院_task0002 (JavaScript)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    
-<a href="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/" class="article-date">
-  <time datetime="2015-06-09T07:52:51.000Z" itemprop="datePublished">2015-06-09</time>
-</a>
-
-
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title"><span>文章目录</span></strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#百度前端技术学院_task0002_(JavaScript)"><span class="toc-number">1.</span> <span class="toc-text">百度前端技术学院_task0002 (JavaScript)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol></li></ol>
-		
-		</div>
-		
-        <h1 id="百度前端技术学院_task0002_(JavaScript)">百度前端技术学院_task0002 (JavaScript)</h1><hr>
-<h2 id="JavaScript的性能优化">JavaScript的性能优化</h2><ul>
-<li>将所有的<script>标签放到页面底部，也就是</body>闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
-<li>尽可能地合并脚本。页面中的<script>标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
-<li>采用无阻塞下载 JavaScript 脚本的方法：</li>
-<li>使用<script>标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
-<li>使用动态创建的<script>元素来下载并执行代码；</li>
-<li><p>使用 XHR 对象下载 JavaScript 代码并注入页面中。</p>
-<p>详见：<a href="http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html">http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html</a><br>在《高性能 JavaScript》也有详细介绍。</p>
-</li>
-</ul>
-<hr>
-<h2 id="判断各种数据类型的方法">判断各种数据类型的方法</h2><p>主要区别<code>typeof</code>与<code>instanceof</code>。<br>typeof一般只能返回如下6种结果：<br>number（任意数字或NaN）,boolean,string,function（函数）,object（NULL,数组，对象）,undefined。<br>可以使用 typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错<br>对于所有对象和数组，typeof运算结果都是“object”.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> o); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true  因为Array是object的子类。</span></span><br><span class="line"><span class="built_in">console</span>.log(o <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
-</script></li></ul>
-      
-    </div>
-    <footer class="article-footer">
-	  
-	  <a data-url="http://starryshi.com/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/" data-id="cic1tsnv4000ue4rcg98lxn0g" data_title="" data_summary="百度前端技术学院_task0002 (JavaScri..." class="article-share-link">Share</a>
-      
-
-      
-        <a href="http://starryshi.com/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/">暂无评论</a>
-      
-	  
-      
-	  
-<span>
-更新日期:<time datetime="2015-06-09T07:52:51.000Z" itemprop="dateModified">2015-06-09</time>
-</span>
-
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-<!-- 多说评论框 start -->
-
-<!-- 多说评论框 end -->
-
-
-  
-    <article id="post-百度前端技术学院_task0002 (JavaScript)" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    
-<a href="/2015/06/09/百度前端技术学院_task0002 (JavaScript)/" class="article-date">
-  <time datetime="2015-06-09T07:52:33.000Z" itemprop="datePublished">2015-06-09</time>
-</a>
-
-
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title"><span>文章目录</span></strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#百度前端技术学院_task0002_(JavaScript)"><span class="toc-number">1.</span> <span class="toc-text">百度前端技术学院_task0002 (JavaScript)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol></li></ol>
-		
-		</div>
-		
-        <h1 id="百度前端技术学院_task0002_(JavaScript)">百度前端技术学院_task0002 (JavaScript)</h1><hr>
-<h2 id="JavaScript的性能优化">JavaScript的性能优化</h2><ul>
-<li>将所有的<script>标签放到页面底部，也就是</body>闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
-<li>尽可能地合并脚本。页面中的<script>标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
-<li>采用无阻塞下载 JavaScript 脚本的方法：</li>
-<li>使用<script>标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
-<li>使用动态创建的<script>元素来下载并执行代码；</li>
-<li><p>使用 XHR 对象下载 JavaScript 代码并注入页面中。</p>
-<p>详见：<a href="http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html">http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html</a><br>在《高性能 JavaScript》也有详细介绍。</p>
-</li>
-</ul>
-<hr>
-<h2 id="判断各种数据类型的方法">判断各种数据类型的方法</h2><p>主要区别<code>typeof</code>与<code>instanceof</code>。<br>typeof一般只能返回如下6种结果：<br>number（任意数字或NaN）,boolean,string,function（函数）,object（NULL,数组，对象）,undefined。<br>可以使用 typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错<br>对于所有对象和数组，typeof运算结果都是“object”.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> o); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true  因为Array是object的子类。</span></span><br><span class="line"><span class="built_in">console</span>.log(o <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
-</script></li></ul>
-      
-    </div>
-    <footer class="article-footer">
-	  
-	  <a data-url="http://starryshi.com/2015/06/09/百度前端技术学院_task0002 (JavaScript)/" data-id="cic1tsnut000ce4rcbk9grqga" data_title="" data_summary="百度前端技术学院_task0002 (JavaScri..." class="article-share-link">Share</a>
-      
-
-      
-        <a href="http://starryshi.com/2015/06/09/百度前端技术学院_task0002 (JavaScript)/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/06/09/百度前端技术学院_task0002 (JavaScript)/">暂无评论</a>
-      
-	  
-      
-	  
-<span>
-更新日期:<time datetime="2015-06-09T07:52:34.000Z" itemprop="dateModified">2015-06-09</time>
-</span>
-
-
-    </footer>
-  </div>
-  
-</article>
-
-
-
-<!-- 多说评论框 start -->
-
-<!-- 多说评论框 end -->
-
-
-  
     <article id="post-Node.js+express4+MongoDB建站实例（一）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
@@ -749,7 +613,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">archive</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -770,15 +634,15 @@ var _hmt = _hmt || [];
           </li>
         
           <li>
-            <a href="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2015/06/09/百度前端技术学院_task0002 (JavaScript)/">(no title)</a>
-          </li>
-        
-          <li>
             <a href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/">Node.js+express4+MongoDB建站实例（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/10/选项卡(DIV+CSS+JavaScript )/">选项卡实现的两种方式</a>
+          </li>
+        
+          <li>
+            <a href="/2015/03/18/九宫格/">九宫格</a>
           </li>
         
       </ul>
