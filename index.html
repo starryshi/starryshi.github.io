@@ -84,116 +84,58 @@ var _hmt = _hmt || [];
     <article id="post-响应式Web设计总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
-<a href="/2015/07/13/响应式Web设计总结/" class="article-date">
-  <time datetime="2015-07-13T09:07:58.000Z" itemprop="datePublished">2015-07-13</time>
+<a href="/2015/07/01/响应式Web设计总结/" class="article-date">
+  <time datetime="2015-07-01T11:05:24.000Z" itemprop="datePublished">2015-07-01</time>
 </a>
 
 
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">前端</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/07/01/响应式Web设计总结/">响应式Web设计总结</a>
+    </h1>
+  
+
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-		
-		<div id="toc" class="toc-article">
-			<strong class="toc-title"><span>文章目录</span></strong>
-		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#响应式Web设计总结"><span class="toc-number">1.</span> <span class="toc-text">响应式Web设计总结</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#相应社设计中的HTML5与CSS3"><span class="toc-number">1.1.</span> <span class="toc-text">相应社设计中的HTML5与CSS3</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#媒体查询"><span class="toc-number">1.2.</span> <span class="toc-text">媒体查询</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#阻止移动浏览器自动调整页面大小"><span class="toc-number">1.2.1.</span> <span class="toc-text">阻止移动浏览器自动调整页面大小</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#针对不同视口宽度修正设计"><span class="toc-number">1.2.2.</span> <span class="toc-text">针对不同视口宽度修正设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#响应式设计中内容始终优先："><span class="toc-number">1.2.3.</span> <span class="toc-text">响应式设计中内容始终优先：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流式布局"><span class="toc-number">1.3.</span> <span class="toc-text">流式布局</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#将网页从固定布局修改为百分比布局"><span class="toc-number">1.3.1.</span> <span class="toc-text">将网页从固定布局修改为百分比布局</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#弹性图片及其他多媒体："><span class="toc-number">1.3.2.</span> <span class="toc-text">弹性图片及其他多媒体：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#相应式设计中的HTML5"><span class="toc-number">1.4.</span> <span class="toc-text">相应式设计中的HTML5</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#HTML5语义化便签："><span class="toc-number">1.4.0.1.</span> <span class="toc-text">HTML5语义化便签：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#HTML5文本级语义元素："><span class="toc-number">1.4.1.</span> <span class="toc-text">HTML5文本级语义元素：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#在HTML5中嵌入媒体："><span class="toc-number">1.4.1.1.</span> <span class="toc-text">在HTML5中嵌入媒体：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS3"><span class="toc-number">1.5.</span> <span class="toc-text">CSS3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#多栏布局：column-width_或column-count"><span class="toc-number">1.5.1.</span> <span class="toc-text">多栏布局：column-width 或column-count</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#文字换行：word-wrap:break-word;"><span class="toc-number">1.5.1.1.</span> <span class="toc-text">文字换行：word-wrap:break-word;</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS3新增选择器："><span class="toc-number">1.5.2.</span> <span class="toc-text">CSS3新增选择器：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#属性选择器"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">属性选择器</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CSS3结构伪类："><span class="toc-number">1.5.2.2.</span> <span class="toc-text">CSS3结构伪类：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义字体"><span class="toc-number">1.5.3.</span> <span class="toc-text">自定义字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS3颜色:"><span class="toc-number">1.5.4.</span> <span class="toc-text">CSS3颜色:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#文字阴影："><span class="toc-number">1.5.5.</span> <span class="toc-text">文字阴影：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#盒阴影（元素投影）："><span class="toc-number">1.5.6.</span> <span class="toc-text">盒阴影（元素投影）：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#渐变"><span class="toc-number">1.5.7.</span> <span class="toc-text">渐变</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#线性渐变："><span class="toc-number">1.5.7.1.</span> <span class="toc-text">线性渐变：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#径向渐变："><span class="toc-number">1.5.7.2.</span> <span class="toc-text">径向渐变：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多重背景图片："><span class="toc-number">1.5.8.</span> <span class="toc-text">多重背景图片：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#过渡transition"><span class="toc-number">1.5.9.</span> <span class="toc-text">过渡transition</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#变形transform"><span class="toc-number">1.5.10.</span> <span class="toc-text">变形transform</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2D变形："><span class="toc-number">1.5.10.1.</span> <span class="toc-text">2D变形：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3D变形："><span class="toc-number">1.5.10.2.</span> <span class="toc-text">3D变形：</span></a></li></ol></li></ol></li></ol></li></ol>
-		
-		</div>
-		
-        <h1 id="响应式Web设计总结">响应式Web设计总结</h1><p>标签（空格分隔）： 响应式 CSS3 HTML5</p>
-<hr>
-<p><strong>响应式设计：</strong><br>针对任意设备对网页内容进行完美布局的一种显示机制。</p>
+        <p><strong>响应式设计：</strong><br>针对任意设备对网页内容进行完美布局的一种显示机制。</p>
 <pre><code><span class="attribute">响应式设计</span>=<span class="string">弹性布局+弹性图片+媒体查询</span>
 </code></pre><p><strong>视口调试工具：</strong><br>Firefox：Firesizer<br>Chrome: window resizer</p>
-<p><strong>响应式设计创意收集网站</strong>：<a href="http://mediaqueri.es" target="_blank" rel="external">http://mediaqueri.es</a></p>
-<h2 id="相应社设计中的HTML5与CSS3">相应社设计中的HTML5与CSS3</h2><p>相应式设计的主要目标：1. 对用户有限的视口做出相应；2. 以最快的时间加载网页。<br><strong>HTML5</strong>相对于上一个版本新增了语义化标签元素，使代码更具语义化，方便搜索引擎检索，而且便于开发人员维护代码。此外，HTML5在表带提交等基本网页交互场景中可以不依赖于JavaScript对用户做出反馈。因此对于响应式设计来说，允许我们创建更加简洁和快速的代码。<br><strong>CSS3</strong>对于文字阴影、渐变、圆角、RGBA颜色、多重背景图片等方面提供了灵活的方法，使用CSS3制作动画比JavaScript或Flash更加轻量级、更好维护。更重要的是，利用CSS3的媒体查询功能，可以对特定的视口设置特定的CSS规则。<br>本文实例网页布局：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/resBuju.png" alt="本文实例网页布局"></p>
-<h2 id="媒体查询">媒体查询</h2><p>媒体查询是CSS3的一个模块，可以让我们根据设备显示器的特性为其设定CSS样式。<br>特性包括：视口宽度、屏幕比例、设备方向等。<br>根据浏览器宽度调整背景颜色：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="at_rule">@<span class="keyword">media</span> screen and (max-width:<span class="number">960px</span>)</span>&#123;</span><br><span class="line">    <span class="tag">Body</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">Background-color</span>:<span class="value">red</span></span>;</span><br><span class="line">    <span class="rule">&#125;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>另一种方式：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=”stylesheet” media=”screen and (orientation:portrait)” href=”portrait-screen.css”&gt;</span><br></pre></td></tr></table></figure></p>
-<p>还有一种方式（不推荐）： @import方式会增加HTTP请求。<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="at_rule">@<span class="keyword">import</span> <span class="function">url</span>(“phone.css) screen and (max-width:<span class="number">360px</span>)</span>;</span><br></pre></td></tr></table></figure></p>
-<h3 id="阻止移动浏览器自动调整页面大小">阻止移动浏览器自动调整页面大小</h3><p>将页面放大到设备实际尺寸的两倍显示：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;meta name="viewport" content="initial-scale=2.0,width=device-width"&gt;</span><br></pre></td></tr></table></figure></p>
-<p><code>width=device-width</code> :告诉浏览器页面的宽度应该等于设备宽度.<br><code>maximum-scale=3,minimum-scale=0.5</code>: 缩放的最大最小比例.</p>
-<h3 id="针对不同视口宽度修正设计">针对不同视口宽度修正设计</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="at_rule">@<span class="keyword">media</span> screen and (max-width: <span class="number">768px</span>)</span>&#123;</span><br><span class="line">    <span class="id">#wrapper</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">768px</span></span></span>;</span><br><span class="line">    <span class="rule">&#125;</span></span></span><br><span class="line">    <span class="id">#header</span>,<span class="id">#footer</span>,<span class="id">#navigation</span><span class="rules">&#123;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">748px</span></span></span>;</span><br><span class="line">    <span class="rule">&#125;</span></span></span><br><span class="line">    <span class="id">#content</span>,<span class="id">#sidebar</span><span class="rules">&#123;<span class="rule">//解决导航超出背景图和主内容浮动在侧边连下的问题</span><br><span class="line">        <span class="attribute">padding-right</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">padding-left</span>:<span class="value"> <span class="number">10px</span></span></span>;</span><br><span class="line">        <span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">728px</span></span></span>;</span><br><span class="line">    <span class="rule">&#125;</span></span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="响应式设计中内容始终优先：">响应式设计中内容始终优先：</h3><p>调换<code>sidebar</code>与<code>content</code>的位置，由于它俩有左右浮动，所以在大视口时没有变化，但是在ipad下首先显示内容区。</p>
-<h2 id="流式布局">流式布局</h2><p>媒体查询的局限性：仅使用媒体查询来适应不同视口的固定宽度设计，只会从一组媒体查询规则突变到另一组，两者之间没有任何平滑渐变。</p>
-<h3 id="将网页从固定布局修改为百分比布局">将网页从固定布局修改为百分比布局</h3><p><strong>将固定像素宽度转换对应的百分比宽度：</strong><br>        <strong><code>百分比宽度 = 目标元素宽度/上下文元素宽度</code></strong><br>注意：<em>该公式不仅适用于将固定像素宽度转换为对应的百分比宽度，而且适用于文字的像素单位转换为相对单位。文字的行高相对于其本身的文字大小。</em></p>
-<h3 id="弹性图片及其他多媒体：">弹性图片及其他多媒体：</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">img</span>, <span class="tag">object</span>,<span class="tag">video</span>,<span class="tag">embed</span><span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">max-width</span>:<span class="value"><span class="number">100%</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>老版本的IE不支持max-width，所以只好写成：<br>　　    <code>img { width: 100%; }</code></p>
-<p>设置弹性图片的局限：<br>1）  需要提前准备一张足够大的图片<br>2）  无论视口多大都得下载超大图片。</p>
-<p>设置自适应图片：<a href="http://adaptive-images.com" target="_blank" rel="external">http://adaptive-images.com</a></p>
-<h2 id="相应式设计中的HTML5">相应式设计中的HTML5</h2><p><strong>Modernizr</strong>: Modernizr不是检测user-agent字符串，而是使用一系列测试来判断浏览器的特性。Modernizr是基于渐进增强理论来开发的。<br>运行的时候它会在html元素上添加一批CSS的class名称，这些class名称标记当前浏览器支持哪些特性和不支持哪些特性，支持的特性就直接显示该天特性的名称作为一个class（例如:<code>canvas,websockets</code>），不支持的特性显示的class是“no-特性名称”（例如：<code>no-flexbox</code>）。<br>在chrome下的结果：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/c1.png" alt="chrome下的结果"><br>在IE6下的结果：<br><img src="http://7xidqg.com1.z0.glb.clouddn.com/c2.png" alt="IE6下的结果"></p>
-<h4 id="HTML5语义化便签：">HTML5语义化便签：</h4><p>section、nav、article、aside、hgroup、header、footer、address</p>
-<h3 id="HTML5文本级语义元素：">HTML5文本级语义元素：</h3><p>b、em、i</p>
-<h4 id="在HTML5中嵌入媒体：">在HTML5中嵌入媒体：</h4><p>video、audio<br><strong>相应式视频：</strong><br>对于video标签：<code>video{ max-width: 100%; height: auto;}</code><br>对于iframe标签：需要引入jQuery库文件，下载FitVids插件，将FitVids.js引入。如<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    $(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span><span class="params">()</span></span>&#123;</span><br><span class="line">          $(<span class="string">"#content"</span>).fitVids();</span><br><span class="line">    &#125;);</span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="title">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>补充：HTML5中的ID值可以用数字开头。</p>
-<h2 id="CSS3">CSS3</h2><p>使用CSS3替代图片，可以大幅减少视觉效果对图片的依赖，有效减少http请求，并可以使网页更灵活、更易维护。<br><strong>私有前缀</strong>：用来测试“试验性”的css特性，如：</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.round</span><span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">-moz-border-radius</span>:<span class="value"> <span class="number">10px</span></span></span>; <span class="comment">/*Mozilla :firefox*/</span></span><br><span class="line">    <span class="rule"><span class="attribute">-webkit-border-radius</span>:<span class="value"> <span class="number">10px</span></span></span>; <span class="comment">/*Webkit: safari, chrome*/</span></span><br><span class="line">    <span class="rule"><span class="attribute">-o-border-radius</span>:<span class="value"> <span class="number">10px</span></span></span>; <span class="comment">/*opera*/</span></span><br><span class="line">    <span class="rule"><span class="attribute">-ms-border-radius</span>:<span class="value"> <span class="number">10px</span></span></span>; <span class="comment">/*MIcrosoft*/</span></span><br><span class="line">    <span class="rule"><span class="attribute">border-radius</span>:<span class="value"><span class="number">10px</span></span></span>; <span class="comment">/*W3C*/</span></span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p>浏览器对于HTML5与CSS3的支持情况：<a href="http://caniuse.com" target="_blank" rel="external">http://caniuse.com</a></p>
-<h3 id="多栏布局：column-width_或column-count">多栏布局：column-width 或column-count</h3><p>增加栏位间隙和分割线：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">column-gap</span><span class="pseudo">:2em</span>;</span><br><span class="line"><span class="tag">column-rule</span><span class="pseudo">:thin</span> <span class="tag">dotted</span> <span class="id">#999</span>;</span><br></pre></td></tr></table></figure></p>
-<h4 id="文字换行：word-wrap:break-word;">文字换行：<code>word-wrap:break-word;</code></h4><h3 id="CSS3新增选择器：">CSS3新增选择器：</h3><h4 id="属性选择器">属性选择器</h4><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">img[alt=”value”]&#123;&#125;</span><br><span class="line">img[alt^=”value”]&#123;&#125;  //匹配开头</span><br><span class="line">img[alt$=”value”]&#123;&#125;  //匹配结尾</span><br><span class="line">img[alt*=”value”]&#123;&#125;  //匹配包含内容</span><br></pre></td></tr></table></figure>
-<h4 id="CSS3结构伪类：">CSS3结构伪类：</h4><ol>
-<li>:last-child选择器</li>
-<li>:nth-child选择器<pre><code>例如：交替使用不同颜色 :`<span class="tag">li</span><span class="pseudo">:nth-child(even)</span> <span class="rules">{<span class="rule"><span class="attribute">color</span>:<span class="value">red</span></span>;<span class="rule">}</span></span>`
-</code></pre>CSS3的计数方式是从1开始的，不是0.</li>
-<li>:not选择器：    <code>li:not(.internal){}</code></li>
-<li>对伪元素的修正：<br>CSS2中, <code>p:first-line</code>,<code>p:first-letter</code><br>CSS3中, 使用两个冒号以便与伪类进行区别，<code>p::first-line</code>,<code>p::first-letter</code>(IE8-只识别一个冒号)<br><code>:first-line</code>的一个特点：会根据视口自动变化，如第一行的颜色不管视口如何变化都为红色。</li>
-</ol>
-<h3 id="自定义字体">自定义字体</h3><p>@font-face规则：在CSS2中已经存在，在CSS2.1中被删除过，CSS3中重新引入。<br>不同浏览器对字体支持情况不同：IE-eot格式，其他格式还有ttf、SVG、woff等。<br>    免费字体下载：<a href="http://www.fontsquirrel.com/" target="_blank" rel="external">http://www.fontsquirrel.com/</a><br>    自定义字体注意事项:注意控制自定义字体的文件尺寸.</p>
-<h3 id="CSS3颜色:">CSS3颜色:</h3><p>CSS3允许使用RGB和HSL来声明颜色,还能在这两个方法后追加透明通道（分别是<code>RGBA</code>和<code>HSLA</code>）。<br>HSL: 色相（60黄120绿180青240蓝300粉360红）、饱和度、亮度。<br>透明通道：<code>hsla(0,0%,100%,0.8)</code>或 <code>rgba(255,255,255,0.8)</code><br>            第4个参数：0(全透明)~1(不透明)<br><strong>与opacity设置透明度的区别：</strong><br>    opacity设置的透明度会对整个元素产生影响（元素的内容会变透明）。</p>
-<h3 id="文字阴影：">文字阴影：</h3><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">text-shadow</span>: 1<span class="tag">px</span> 2<span class="tag">px</span> 1<span class="tag">px</span> <span class="id">#404442</span>;  <span class="comment">/*针对老版本浏览器的备用方案*/</span></span><br><span class="line"><span class="tag">text-shadow</span>: 1<span class="tag">px</span> 2<span class="tag">px</span> 1<span class="tag">px</span> <span class="tag">hsla</span>(140,3%,26%,0<span class="class">.4</span>);</span><br></pre></td></tr></table></figure>
-<p>text-shadow参数：<br>    第1个参数：右侧阴影的大小；（用负值可以制造左上方阴影）<br>    第2个参数：下方阴影的大小；<br>    第3个参数：模糊距离；<br>    第4个参数：阴影颜色<br><strong>多重文字阴影</strong>：<br>    <code>text-shadow:0px 1px 0px #ffffff, 4px 4px 0px #dad7d7 ;</code>（中间用逗号隔开）<br>因为阴影一般都很小，所以很少用em、rem作为阴影大小的单位。</p>
-<h3 id="盒阴影（元素投影）：">盒阴影（元素投影）：</h3><p>与文字阴影类似，但是跨浏览器支持不好，最好加上私有前缀。</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">img</span> <span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> <span class="number">0px</span> <span class="number">3px</span> <span class="number">5px</span> <span class="hexcolor">#444</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure>
-<p><strong>内阴影</strong>——制造光晕效果<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span><span class="rules">&#123;</span><br><span class="line">    <span class="rule"><span class="attribute">-moz-box-shadow</span>:<span class="value"> inset <span class="number">0</span> <span class="number">0</span> <span class="number">30px</span> <span class="hexcolor">#000</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">-webkit-box-shadow</span>:<span class="value"> inset <span class="number">0</span> <span class="number">0</span> <span class="number">30px</span> <span class="hexcolor">#000</span></span></span>;</span><br><span class="line">    <span class="rule"><span class="attribute">box-shadow</span>:<span class="value"> inset <span class="number">0</span> <span class="number">0</span> <span class="number">30px</span> <span class="hexcolor">#000</span></span></span>;</span><br><span class="line"><span class="rule">&#125;</span></span></span><br></pre></td></tr></table></figure></p>
-<p>盒阴影也可以像文字阴影一样制造多重阴影效果。</p>
-<h3 id="渐变">渐变</h3><h4 id="线性渐变：">线性渐变：</h4><pre><code><span class="attribute">background</span><span class="value">: <span class="function">linear-gradient</span>(<span class="number">90deg</span>, <span class="hexcolor">#fff</span> <span class="number">0%</span>, <span class="hexcolor">#e4e4e4</span> <span class="number">48.7%</span>, <span class="hexcolor">#fff</span> <span class="number">100%</span>);</span>
-
-第一个参数：90deg（垂直从顶部向下），to <span class="attribute">top</span> <span class="attribute">right</span>（朝右上角的渐变）
-第二个参数：渐变的起点，包括颜色和位置
-第三个参数：过渡颜色点
-第四个参数：渐变终点
-</code></pre><h4 id="径向渐变：">径向渐变：</h4><pre><code>background: radius-gradient(center,  eclipse cover, <span class="comment">#e4e4e4 48.7%, #fff 100%);</span>
-第一个参数：渐变起点，也可以用坐标值表示，如<span class="number">40</span>px,<span class="number">40</span>px.
-第二个参数：渐变形状与大小
-        形状包括circle和eclipse
-        大小：farthest-side/closest-side或<span class="keyword">contain</span>：距中心点最远/最近的一边为半径；
-            closest-corner/farthest-corner或<span class="keyword">contain</span>: 距中心点最近/最远的一角为半径；
-</code></pre><h3 id="多重背景图片：">多重背景图片：</h3><p><strong>声明多重背景图片—&gt;声明背景大小—&gt;声明背景位置</strong><br>注意：排在最前面的图片在浏览器中显示时会覆盖在最上面；在声明中追加背景颜色一般定义在最后面，这样背景色就会显示在所有背景图片的下方。</p>
-<h3 id="过渡transition">过渡transition</h3><pre><code><span class="id">#content</span> <span class="tag">a</span><span class="rules">{ <span class="rule"><span class="attribute">transition</span>:<span class="value"> all <span class="number">1s</span> ease <span class="number">0s</span></span></span>;<span class="rule">}</span></span>
-过渡效果设计四个属性：
-</code></pre><ul>
-<li>要过渡的属性名称：如background-color、all等</li>
-<li>过渡持续的时间</li>
-<li>过渡期间速度如何变化：ease等</li>
-<li>过渡开始前的延误时间</li>
-</ul>
-<h3 id="变形transform">变形transform</h3><h4 id="2D变形：">2D变形：</h4><ul>
-<li>scale:缩放元素; </li>
-<li>translate:在屏幕上移动元素（上下左右）</li>
-<li>rotate:按一定角度旋转 </li>
-<li>skew:斜切</li>
-<li>matrix：以像素精度控制变形效果。</li>
-</ul>
-<h4 id="3D变形：">3D变形：</h4><p>浏览器支持情况：Webkit核心浏览器（Safari和Chrome）和Firefox10+；由于移动平台浏览器基本都是Webkit血统 ，3D变形在Android（V3+）和IOS上都被支持。<br>首先，在父级元素上设置透视：element{-webkit-perspective:200;}<br>第二，设置3D场景，element child-element{transform-style:preserve-3d;}<br>第三，设置翻转效果：element:hover . child-element{transform: rotate(180deg);<br>第四：翻转后隐藏：.face{positon:absolute; backface-visibility:hidden;}<br>第五，给背面也加上rotateY：.back{transform:rotate(180deg);}</p>
-
+<p><strong>响应式设计创意收集网站</strong>：<a href="http://mediaqueri.es">http://mediaqueri.es</a><br>
+        
+          <p class="article-more-link">
+            <a href="/2015/07/01/响应式Web设计总结/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/07/13/响应式Web设计总结/" data-id="cic1tsnuv000de4rcbhy33h5f" data_title="" data_summary="响应式Web设计总结标签（空格分隔）： 响应式 CSS..." class="article-share-link">Share</a>
+	  <a data-url="http://starryshi.com/2015/07/01/响应式Web设计总结/" data-id="cic1uzn0g000i50rcjejtlj2i" data_title="响应式Web设计总结" data_summary="响应式设计：针对任意设备对网页内容进行完美布局的一种显..." class="article-share-link">Share</a>
       
 
       
-        <a href="http://starryshi.com/2015/07/13/响应式Web设计总结/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/07/13/响应式Web设计总结/">暂无评论</a>
+        <a href="http://starryshi.com/2015/07/01/响应式Web设计总结/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/07/01/响应式Web设计总结/">暂无评论</a>
       
 	  
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/CSS3/">CSS3</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML5/">HTML5</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/响应式/">响应式</a></li></ul>
+
 	  
 <span>
-更新日期:<time datetime="2015-07-13T09:39:14.000Z" itemprop="dateModified">2015-07-13</time>
+更新日期:<time datetime="2015-07-13T12:00:49.000Z" itemprop="dateModified">2015-07-13</time>
 </span>
 
 
@@ -210,18 +152,32 @@ var _hmt = _hmt || [];
 
 
   
-    <article id="post-# 百度前端技术学院_task0002 (JavaScript)" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-百度前端技术学院_task0002 (JavaScript)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
-<a href="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/" class="article-date">
-  <time datetime="2015-06-09T07:53:17.000Z" itemprop="datePublished">2015-06-09</time>
+<a href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/" class="article-date">
+  <time datetime="2015-05-18T01:15:24.000Z" itemprop="datePublished">2015-05-18</time>
 </a>
 
 
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">前端</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/">百度前端技术学院_task0002 (JavaScript)</a>
+    </h1>
+  
+
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
@@ -229,12 +185,11 @@ var _hmt = _hmt || [];
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"><span>文章目录</span></strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#百度前端技术学院_task0002_(JavaScript)"><span class="toc-number">1.</span> <span class="toc-text">百度前端技术学院_task0002 (JavaScript)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol>
 		
 		</div>
 		
-        <h1 id="百度前端技术学院_task0002_(JavaScript)">百度前端技术学院_task0002 (JavaScript)</h1><hr>
-<h2 id="JavaScript的性能优化">JavaScript的性能优化</h2><ul>
+        <h2 id="JavaScript的性能优化">JavaScript的性能优化</h2><ul>
 <li>将所有的<script>标签放到页面底部，也就是</body>闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
 <li>尽可能地合并脚本。页面中的<script>标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
 <li>采用无阻塞下载 JavaScript 脚本的方法：</li>
@@ -267,17 +222,20 @@ var _hmt = _hmt || [];
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/" data-id="cic1tsnv7000ve4rcx61ms28j" data_title="" data_summary="百度前端技术学院_task0002 (JavaScri..." class="article-share-link">Share</a>
+	  <a data-url="http://starryshi.com/2015/05/18/百度前端技术学院_task0002 (JavaScript)/" data-id="cic1uzn0d000c50rcphl2wq1c" data_title="百度前端技术学院_task0002 (JavaScript)" data_summary="JavaScript的性能优化
+将所有的标签放到页面底..." class="article-share-link">Share</a>
       
 
       
-        <a href="http://starryshi.com/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/">暂无评论</a>
+        <a href="http://starryshi.com/2015/05/18/百度前端技术学院_task0002 (JavaScript)/#ds-thread" class="ds-thread-count article-comment-link" data-thread-key="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/">暂无评论</a>
       
 	  
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript/">JavaScript</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+
 	  
 <span>
-更新日期:<time datetime="2015-06-10T03:18:04.000Z" itemprop="dateModified">2015-06-10</time>
+更新日期:<time datetime="2015-07-13T11:56:41.000Z" itemprop="dateModified">2015-07-13</time>
 </span>
 
 
@@ -334,7 +292,7 @@ var _hmt = _hmt || [];
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" data-id="cic1tsnv1000me4rcoannm12n" data_title="Node.js+express4+MongoDB建站实例（一）" data_summary="开发环境Win-32nodeJs v0.10.36Mo..." class="article-share-link">Share</a>
+	  <a data-url="http://starryshi.com/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" data-id="cic1uzn0o000x50rc36npb7s7" data_title="Node.js+express4+MongoDB建站实例（一）" data_summary="开发环境Win-32nodeJs v0.10.36Mo..." class="article-share-link">Share</a>
       
 
       
@@ -402,7 +360,7 @@ var _hmt = _hmt || [];
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/04/10/选项卡(DIV+CSS+JavaScript )/" data-id="cic1tsnun0003e4rcfzhs7p87" data_title="选项卡实现的两种方式" data_summary="效果图:    
+	  <a data-url="http://starryshi.com/2015/04/10/选项卡(DIV+CSS+JavaScript )/" data-id="cic1uzn07000350rc7xv2nya7" data_title="选项卡实现的两种方式" data_summary="效果图:    
 页面布局与样式HTML页面布局选项卡..." class="article-share-link">Share</a>
       
 
@@ -472,7 +430,7 @@ var _hmt = _hmt || [];
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/03/18/九宫格/" data-id="cic1tsnuy000he4rcve6fwa4h" data_title="九宫格" data_summary="方法一（DIV）首先想到的是用div元素和float属..." class="article-share-link">Share</a>
+	  <a data-url="http://starryshi.com/2015/03/18/九宫格/" data-id="cic1uzn0l000t50rcn2dhxbji" data_title="九宫格" data_summary="方法一（DIV）首先想到的是用div元素和float属..." class="article-share-link">Share</a>
       
 
       
@@ -542,7 +500,7 @@ var _hmt = _hmt || [];
     </div>
     <footer class="article-footer">
 	  
-	  <a data-url="http://starryshi.com/2015/03/15/从面向对象到原型、原型链、继承/" data-id="cic1tsnuw000ee4rchifumvxs" data_title="从面向对象到原型、原型链、继承" data_summary="什么是面向对象？面向对象的三个特性:封装、继承、多态
+	  <a data-url="http://starryshi.com/2015/03/15/从面向对象到原型、原型链、继承/" data-id="cic1uzn0j000q50rc9g92eir6" data_title="从面向对象到原型、原型链、继承" data_summary="什么是面向对象？面向对象的三个特性:封装、继承、多态
 ..." class="article-share-link">Share</a>
       
 
@@ -583,7 +541,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">分类</h3>
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web/">前端</a><span class="category-list-count">4</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web/">前端</a><span class="category-list-count">6</span></li></ul>
     </div>
   </div>
 
@@ -593,7 +551,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">标签</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MongoDB/">MongoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3/">CSS3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MongoDB/">MongoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -603,7 +561,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">标签云</h3>
     <div class="widget tagcloud">
-     <a href="/tags/CSS/" style="font-size: 20px; color: #800080">CSS</a><a href="/tags/MongoDB/" style="font-size: 10px; color: #7dc3de">MongoDB</a><a href="/tags/express/" style="font-size: 10px; color: #7dc3de">express</a><a href="/tags/jQuery/" style="font-size: 10px; color: #7dc3de">jQuery</a><a href="/tags/javascript/" style="font-size: 20px; color: #800080">javascript</a><a href="/tags/nodejs/" style="font-size: 10px; color: #7dc3de">nodejs</a><a href="/tags/前端/" style="font-size: 10px; color: #7dc3de">前端</a>
+     <a href="/tags/CSS/" style="font-size: 20px; color: #800080">CSS</a><a href="/tags/CSS3/" style="font-size: 10px; color: #7dc3de">CSS3</a><a href="/tags/HTML5/" style="font-size: 10px; color: #7dc3de">HTML5</a><a href="/tags/JavaScript/" style="font-size: 10px; color: #7dc3de">JavaScript</a><a href="/tags/MongoDB/" style="font-size: 10px; color: #7dc3de">MongoDB</a><a href="/tags/express/" style="font-size: 10px; color: #7dc3de">express</a><a href="/tags/jQuery/" style="font-size: 10px; color: #7dc3de">jQuery</a><a href="/tags/javascript/" style="font-size: 20px; color: #800080">javascript</a><a href="/tags/nodejs/" style="font-size: 10px; color: #7dc3de">nodejs</a><a href="/tags/前端/" style="font-size: 20px; color: #800080">前端</a><a href="/tags/响应式/" style="font-size: 10px; color: #7dc3de">响应式</a>
     </div>
   </div>
 
@@ -613,7 +571,7 @@ var _hmt = _hmt || [];
   <div class="widget-wrap">
     <h3 class="widget-title">archive</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">六月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
@@ -626,11 +584,11 @@ var _hmt = _hmt || [];
       <ul>
         
           <li>
-            <a href="/2015/07/13/响应式Web设计总结/">(no title)</a>
+            <a href="/2015/07/01/响应式Web设计总结/">响应式Web设计总结</a>
           </li>
         
           <li>
-            <a href="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/">(no title)</a>
+            <a href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/">百度前端技术学院_task0002 (JavaScript)</a>
           </li>
         
           <li>
