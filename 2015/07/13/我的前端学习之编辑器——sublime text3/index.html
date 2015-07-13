@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>我的前端学习之编辑器——sublime text3 | Starry&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="sublime text3常用插件整理:
+Package Control插件管理使用Ctrl+```（Esc键下方）快捷键或者通过View-&amp;gt;Show Console菜单打开命令行,输入如下：1import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的前端学习之编辑器——sublime text3">
+<meta property="og:url" content="http://starryshi.com/2015/07/13/我的前端学习之编辑器——sublime text3/index.html">
+<meta property="og:site_name" content="Starry's Blog">
+<meta property="og:description" content="sublime text3常用插件整理:
+Package Control插件管理使用Ctrl+```（Esc键下方）快捷键或者通过View-&amp;gt;Show Console菜单打开命令行,输入如下：1import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_p">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="我的前端学习之编辑器——sublime text3">
+<meta name="twitter:description" content="sublime text3常用插件整理:
+Package Control插件管理使用Ctrl+```（Esc键下方）快捷键或者通过View-&amp;gt;Show Console菜单打开命令行,输入如下：1import urllib.request,os; pf = &apos;Package Control.sublime-package&apos;; ipp = sublime.installed_packages_p">
+  
+    <link rel="alternative" href="/atom.xml" title="Starry&#39;s Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="http://fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?6e46e62e5f91583a8329b6ed9543d36f";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Starry&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">follow your heart, keep hungry and keep stupid</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">首页</a>
+        
+          <a class="main-nav-link" href="/archives">文章</a>
+        
+          <a class="main-nav-link" href="/works">作品</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/starryshi" title="Github" target="_blank"></a>
+        
+      <!--   
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed" target="_blank"></a>
+         -->
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="q" value="site:http://starryshi.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-我的前端学习之编辑器——sublime text3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    
+<a href="/2015/07/13/我的前端学习之编辑器——sublime text3/" class="article-date">
+  <time datetime="2015-07-13T03:57:00.000Z" itemprop="datePublished">2015-07-13</time>
+</a>
+
+
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      我的前端学习之编辑器——sublime text3
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title"><span>文章目录</span></strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Package_Control插件管理"><span class="toc-number">1.</span> <span class="toc-text">Package Control插件管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emmet"><span class="toc-number">2.</span> <span class="toc-text">Emmet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ColorPicker"><span class="toc-number">3.</span> <span class="toc-text">ColorPicker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSScomb"><span class="toc-number">4.</span> <span class="toc-text">CSScomb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SideBarEnhancements"><span class="toc-number">5.</span> <span class="toc-text">SideBarEnhancements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeCodeIntel"><span class="toc-number">6.</span> <span class="toc-text">SublimeCodeIntel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeLinter"><span class="toc-number">7.</span> <span class="toc-text">SublimeLinter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeTmpl"><span class="toc-number">8.</span> <span class="toc-text">SublimeTmpl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Alignment"><span class="toc-number">9.</span> <span class="toc-text">Alignment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jsformat"><span class="toc-number">10.</span> <span class="toc-text">Jsformat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Autoprefixer"><span class="toc-number">11.</span> <span class="toc-text">Autoprefixer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jshint"><span class="toc-number">12.</span> <span class="toc-text">Jshint</span></a></li></ol>
+		
+		</div>
+		
+        <p>sublime text3常用插件整理:</p>
+<h2 id="Package_Control插件管理">Package Control插件管理</h2><p>使用Ctrl+```（Esc键下方）快捷键或者通过View-&gt;Show Console菜单打开命令行,输入如下：<br><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> urllib.request,os; pf = <span class="string">'Package Control.sublime-package'</span>; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.<span class="keyword">join</span>(ipp, pf), <span class="string">'wb'</span>).<span class="keyword">write</span>(urllib.request.urlopen( <span class="string">'http://sublime.wbond.net/'</span> + pf.replace(<span class="string">' '</span>,<span class="string">'%20'</span>)).<span class="keyword">read</span>())</span><br></pre></td></tr></table></figure></p>
+<a id="more"></a>
+<h2 id="Emmet">Emmet</h2><p> 输入  <code>#page&gt;div.logo+ul#navigation&gt;li*5&gt;a{Item $}</code>后直接生产如下：<br><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">id</span>=<span class="value">"page"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"logo"</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">id</span>=<span class="value">"navigation"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Item 1<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Item 2<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Item 3<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Item 4<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="title">li</span>&gt;</span><span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">""</span>&gt;</span>Item 5<span class="tag">&lt;/<span class="title">a</span>&gt;</span><span class="tag">&lt;/<span class="title">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="title">div</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="ColorPicker">ColorPicker</h2><p><strong>快捷键：ctrl+shift+U</strong><br>若ConvertToUTF8 （快捷键与ColorPicker冲突，打开Sublime Text —&gt; Preferences —&gt; Browse Packages，找到ConvertToUTF8文件夹并进入，修改Defalut(windows).sublime-keymap）</p>
+<h2 id="CSScomb">CSScomb</h2><p>Css属性排序<br><strong>快捷键：ctrl+shift+alt+c</strong></p>
+<h2 id="SideBarEnhancements">SideBarEnhancements</h2><p>点击工具栏的preferences &gt; package setting &gt; side bar &gt; Key Building-User，键入以下代码，这里设置按Ctrl+Shift+C复制文件路径，按F1~F5分别在 firefox，chrome，IE，safari，opera浏览器预览效果。<br><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">[</span><br><span class="line">    &#123; "<span class="attribute">keys</span>": <span class="value">[<span class="string">"ctrl+shift+c"</span>]</span>, "<span class="attribute">command</span>": <span class="value"><span class="string">"copy_path"</span> </span>&#125;,</span><br><span class="line">    //firefox</span><br><span class="line">    &#123; "<span class="attribute">keys</span>": <span class="value">[<span class="string">"f1"</span>]</span>, "<span class="attribute">command</span>": <span class="value"><span class="string">"side_bar_files_open_with"</span></span>,</span><br><span class="line">             "<span class="attribute">args</span>": <span class="value">&#123;</span><br><span class="line">                "<span class="attribute">paths</span>": <span class="value">[]</span>,</span><br><span class="line">                "<span class="attribute">application</span>": <span class="value"><span class="string">"C:\\software\\Browser\\Mozilla Firefox\\firefox.exe"</span></span>,</span><br><span class="line">                "<span class="attribute">extensions</span>":<span class="value"><span class="string">".*"</span> //匹配任何文件类型</span><br><span class="line">            </span>&#125;</span><br><span class="line">    </span>&#125;,</span><br><span class="line">    //chrome</span><br><span class="line">    &#123; "<span class="attribute">keys</span>": <span class="value">[<span class="string">"f2"</span>]</span>, "<span class="attribute">command</span>": <span class="value"><span class="string">"side_bar_files_open_with"</span></span>,</span><br><span class="line">            "<span class="attribute">args</span>": <span class="value">&#123;</span><br><span class="line">                "<span class="attribute">paths</span>": <span class="value">[]</span>,</span><br><span class="line">                "<span class="attribute">application</span>": <span class="value"><span class="string">"C:\\Users\\Mr.DenGo\\AppData\\Local\\Google\\Chrome\\Application\\chrome.exe"</span></span>,</span><br><span class="line">                "<span class="attribute">extensions</span>":<span class="value"><span class="string">".*"</span></span><br><span class="line">            </span>&#125;</span><br><span class="line">     </span>&#125;,</span><br><span class="line">    //ie</span><br><span class="line">     &#123; "<span class="attribute">keys</span>": <span class="value">[<span class="string">"f3"</span>]</span>, "<span class="attribute">command</span>": <span class="value"><span class="string">"side_bar_files_open_with"</span></span>,</span><br><span class="line">             "<span class="attribute">args</span>": <span class="value">&#123;</span><br><span class="line">                "<span class="attribute">paths</span>": <span class="value">[]</span>,</span><br><span class="line">                "<span class="attribute">application</span>": <span class="value"><span class="string">"C:\\Program Files\\Internet Explorer\\iexplore.exe"</span></span>,</span><br><span class="line">                "<span class="attribute">extensions</span>":<span class="value"><span class="string">".*"</span></span><br><span class="line">            </span>&#125;</span><br><span class="line"></span>&#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></p>
+<h2 id="SublimeCodeIntel">SublimeCodeIntel</h2><p>代码补全以及函数跳转。</p>
+<h2 id="SublimeLinter">SublimeLinter</h2><p>检测编辑中的错误。</p>
+<h2 id="SublimeTmpl">SublimeTmpl</h2><p>快速生产样板文件快捷键：<br><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">ctrl+alt+h <span class="tag">html</span></span><br><span class="line">ctrl+alt+j javascript</span><br><span class="line">ctrl+alt+c css</span><br><span class="line">ctrl+alt+<span class="tag">p</span> php</span><br><span class="line">ctrl+alt+r ruby</span><br><span class="line">ctrl+alt+shift+<span class="tag">p</span> python</span><br></pre></td></tr></table></figure></p>
+<h2 id="Alignment">Alignment</h2><p>等号对齐<br><strong>快捷键：Ctrl+Alt+A</strong></p>
+<h2 id="Jsformat">Jsformat</h2><p>javascript格式化</p>
+<h2 id="Autoprefixer">Autoprefixer</h2><p>自动补齐css3前缀。<br>使用方法：在输入CSS3属性后（冒号前）按Tab键。</p>
+<h2 id="Jshint">Jshint</h2><p>检测js文件中的语法错误。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+	  
+	  <!-- 百度分享 Start -->
+	  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	  <!-- 百度分享 End -->
+	  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端工具/">前端工具</a></li></ul>
+
+	  
+<span>
+更新日期:<time datetime="2015-07-13T12:47:11.000Z" itemprop="dateModified">2015-07-13</time>
+</span>
+
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/07/01/响应式Web设计总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">响应式Web设计总结</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+<!-- 多说评论框 start -->
+
+<section id="comments">
+  <div class="ds-thread"  data-thread-key="/2015/07/13/我的前端学习之编辑器——sublime text3/" data-title="我的前端学习之编辑器——sublime text3" data-url="http://starryshi.com/2015/07/13/我的前端学习之编辑器——sublime text3/" id="ds_thread">
+    <noscript>Please enable JavaScript to view the <a href="//duoshuo.com/?ref_noscript">comments powered by duoshuo.</a></noscript>
+  </div>
+</section>
+
+<!-- 多说评论框 end -->
+
+</section>
+        
+          
+  <div id="toc" class="toc-aside">
+  <h2 class="toc-title">文章目录</h2>
+    
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Package_Control插件管理"><span class="toc-number">1.</span> <span class="toc-text">Package Control插件管理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Emmet"><span class="toc-number">2.</span> <span class="toc-text">Emmet</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ColorPicker"><span class="toc-number">3.</span> <span class="toc-text">ColorPicker</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#CSScomb"><span class="toc-number">4.</span> <span class="toc-text">CSScomb</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SideBarEnhancements"><span class="toc-number">5.</span> <span class="toc-text">SideBarEnhancements</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeCodeIntel"><span class="toc-number">6.</span> <span class="toc-text">SublimeCodeIntel</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeLinter"><span class="toc-number">7.</span> <span class="toc-text">SublimeLinter</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SublimeTmpl"><span class="toc-number">8.</span> <span class="toc-text">SublimeTmpl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Alignment"><span class="toc-number">9.</span> <span class="toc-text">Alignment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jsformat"><span class="toc-number">10.</span> <span class="toc-text">Jsformat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Autoprefixer"><span class="toc-number">11.</span> <span class="toc-text">Autoprefixer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Jshint"><span class="toc-number">12.</span> <span class="toc-text">Jshint</span></a></li></ol>
+    
+  </div>
+
+<aside id="sidebar">
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">分类</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web/">前端</a><span class="category-list-count">7</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS/">CSS</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CSS3/">CSS3</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML5/">HTML5</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JavaScript/">JavaScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MongoDB/">MongoDB</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/express/">express</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/jQuery/">jQuery</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/">javascript</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/nodejs/">nodejs</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端/">前端</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前端工具/">前端工具</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/响应式/">响应式</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+     <a href="/tags/CSS/" style="font-size: 20px; color: #800080">CSS</a><a href="/tags/CSS3/" style="font-size: 10px; color: #7dc3de">CSS3</a><a href="/tags/HTML5/" style="font-size: 10px; color: #7dc3de">HTML5</a><a href="/tags/JavaScript/" style="font-size: 10px; color: #7dc3de">JavaScript</a><a href="/tags/MongoDB/" style="font-size: 10px; color: #7dc3de">MongoDB</a><a href="/tags/express/" style="font-size: 10px; color: #7dc3de">express</a><a href="/tags/jQuery/" style="font-size: 10px; color: #7dc3de">jQuery</a><a href="/tags/javascript/" style="font-size: 20px; color: #800080">javascript</a><a href="/tags/nodejs/" style="font-size: 10px; color: #7dc3de">nodejs</a><a href="/tags/前端/" style="font-size: 20px; color: #800080">前端</a><a href="/tags/前端工具/" style="font-size: 10px; color: #7dc3de">前端工具</a><a href="/tags/响应式/" style="font-size: 10px; color: #7dc3de">响应式</a>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">archive</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/05/">五月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/04/">四月 2015</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/03/">三月 2015</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">近期文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2015/07/13/我的前端学习之编辑器——sublime text3/">我的前端学习之编辑器——sublime text3</a>
+          </li>
+        
+          <li>
+            <a href="/2015/07/01/响应式Web设计总结/">响应式Web设计总结</a>
+          </li>
+        
+          <li>
+            <a href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/">百度前端技术学院_task0002 (JavaScript)</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/">Node.js+express4+MongoDB建站实例（一）</a>
+          </li>
+        
+          <li>
+            <a href="/2015/04/10/选项卡(DIV+CSS+JavaScript )/">选项卡实现的两种方式</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Weibo show</h3>
+    <div class="widget">
+		<iframe width="100%" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=550&fansRow=2&ptype=1&speed=0&skin=2&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=1747059561&verifier=6c6f0bb3&dpc=1"></iframe>
+	</div>
+</div>
+
+  
+    
+<div class="widget-wrap">
+  <h3 class="widget-title">友情链接</h3>
+  <ul class="widget">
+    
+    <li><a href="http://yibo.iyiyun.com/js/yibo404/key/1" target="_BLANK">404 page</a></li>
+    
+  </ul>
+</div>
+
+
+  
+
+</aside>
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Starry Shi<br>
+      Powered by <a href="http://zespia.tw/hexo/" target="_blank">Hexo</a> and Theme by <a href="https://github.com/howiefh/hexo-theme-landscape-f" target="_blank" title="Landscape-F">Landscape-F</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">文章</a>
+  
+    <a href="/works" class="mobile-nav-link">作品</a>
+  
+</nav>
+    
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"starryshi"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+     || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+  </script>
+<!-- 多说公共JS代码 end -->
+
+
+<!-- 百度分享 start -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","douban","bdysc","sqq","qq","hi","baidu","huaban","youdao","sdo","mail","xg","diandian","fx","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<!-- 百度分享 end -->
+
+<!--
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
+-->
+<script src="/js/jquery.min.js" type="text/javascript"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<div class="bottom-btn">
+
+	<a class="icon-gotop" href="javascript:void(0)" title="返回顶部"></a>
+	<script src="/js/gotop.js" type="text/javascript"></script>
+	<!--
+	<script src="/js/gotop.js"></script>
+	-->
+
+
+	<a class="icon-toc-toggle" href="javascript:void(0)" title="文章目录"></a>
+	<!--
+	<script src="/js/toc_aside_toggle.js"></script>
+	-->
+
+</div>
+<script src="/js/toc_aside_toggle.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+
+
+
+  </div>
+</body>
+</html>
