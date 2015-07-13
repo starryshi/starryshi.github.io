@@ -3,17 +3,35 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Starry&#39;s Blog</title>
+  <title>我的前端学习之浏览器 | Starry&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Starry's Blog">
-<meta property="og:url" content="http://starryshi.com/archives/index.html">
+  <meta name="description" content="Chrome之chrome dev tools
+console（废话）
+elements:元素样式调整，很常用
+sources：代码中添加断点，单步调试，以及单步调试过程中查看内存中的对象
+watch expression：通过表达式查看当前内存中的值
+call stack：查看调用栈，开启async，可以看异步调用栈（这个非常有用，尤其是ajax调试的时候） 
+scope variables：作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的前端学习之浏览器">
+<meta property="og:url" content="http://starryshi.com/2015/07/13/我的前端学习之浏览器/index.html">
 <meta property="og:site_name" content="Starry's Blog">
-<meta property="og:description">
+<meta property="og:description" content="Chrome之chrome dev tools
+console（废话）
+elements:元素样式调整，很常用
+sources：代码中添加断点，单步调试，以及单步调试过程中查看内存中的对象
+watch expression：通过表达式查看当前内存中的值
+call stack：查看调用栈，开启async，可以看异步调用栈（这个非常有用，尤其是ajax调试的时候） 
+scope variables：作">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Starry's Blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="我的前端学习之浏览器">
+<meta name="twitter:description" content="Chrome之chrome dev tools
+console（废话）
+elements:元素样式调整，很常用
+sources：代码中添加断点，单步调试，以及单步调试过程中查看内存中的对象
+watch expression：通过表达式查看当前内存中的值
+call stack：查看调用栈，开启async，可以看异步调用栈（这个非常有用，尤其是ajax调试的时候） 
+scope variables：作">
   
     <link rel="alternative" href="/atom.xml" title="Starry&#39;s Blog" type="application/atom+xml">
   
@@ -79,204 +97,110 @@ var _hmt = _hmt || [];
 </header>
 
       <div class="outer">
-        <section id="main">
-  
-  
+        <section id="main"><article id="post-我的前端学习之浏览器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/07/13/我的前端学习之浏览器/" class="archive-article-date">
-  <time datetime="2015-07-13T05:07:00.000Z" itemprop="datePublished">7月 13</time>
+<a href="/2015/07/13/我的前端学习之浏览器/" class="article-date">
+  <time datetime="2015-07-13T05:07:00.000Z" itemprop="datePublished">2015-07-13</time>
 </a>
 
 
-      
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/web/">前端</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/07/13/我的前端学习之浏览器/">我的前端学习之浏览器</a>
+    <h1 class="article-title" itemprop="name">
+      我的前端学习之浏览器
     </h1>
   
 
-    </header>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+		
+        <h2 id="Chrome之chrome_dev_tools">Chrome之chrome dev tools</h2><ul>
+<li>console（废话）</li>
+<li>elements:元素样式调整，很常用</li>
+<li>sources：代码中添加断点，单步调试，以及单步调试过程中查看内存中的对象<ul>
+<li>watch expression：通过表达式查看当前内存中的值</li>
+<li>call stack：查看调用栈，开启async，可以看异步调用栈（这个非常有用，尤其是ajax调试的时候） </li>
+<li>scope variables：作用域链上的变量，非常有用<a id="more"></a></li>
+</ul>
+</li>
+<li>network：抓包查看每个请求，非常重要，前后端联调必备</li>
+<li>timeline：分析渲染、js执行等等各个阶段，性能优化利器</li>
+<li>emulation：模拟移动端环境，mobile页面开发必备</li>
+<li>一些插件:<ul>
+<li>liveload: 修改页面后自动刷新，不用按F5 </li>
+<li>dimensions：直接在页面上测量的利器</li>
+<li>livestyle：css样式修改后自动起效果，不需要刷新，elements修改后也能同步到代码中</li>
+<li>image tool：测量，取色</li>
+<li>UC二维码：移动端调试扫码必备</li>
+<li>pagespeed，YSlow：页面性能分析和优化插件</li>
+</ul>
+</li>
+</ul>
+<h2 id="FireFox之Firebug">FireFox之Firebug</h2><ul>
+<li>Live HTTP headers </li>
+<li>Web Developer</li>
+</ul>
+<h2 id="IETester之DebugBar">IETester之DebugBar</h2><p>Debugar下载地址：<a href="http://www.debugbar.com/download.php" target="_blank" rel="external">http://www.debugbar.com/download.php</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+	  
+	  <!-- 百度分享 Start -->
+	  <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+	  <!-- 百度分享 End -->
+	  
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端工具/">前端工具</a></li></ul>
+
+	  
+<span>
+更新日期:<time datetime="2015-07-13T13:01:55.000Z" itemprop="dateModified">2015-07-13</time>
+</span>
+
+
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/07/13/我的前端学习之编辑器——sublime text3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">我的前端学习之编辑器——sublime text3</div>
+    </a>
+  
+</nav>
+
+  
 </article>
 
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/07/13/我的前端学习之编辑器——sublime text3/" class="archive-article-date">
-  <time datetime="2015-07-13T03:57:00.000Z" itemprop="datePublished">7月 13</time>
-</a>
 
 
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/07/13/我的前端学习之编辑器——sublime text3/">我的前端学习之编辑器——sublime text3</a>
-    </h1>
-  
+<!-- 多说评论框 start -->
 
-    </header>
+<section id="comments">
+  <div class="ds-thread"  data-thread-key="/2015/07/13/我的前端学习之浏览器/" data-title="我的前端学习之浏览器" data-url="http://starryshi.com/2015/07/13/我的前端学习之浏览器/" id="ds_thread">
+    <noscript>Please enable JavaScript to view the <a href="//duoshuo.com/?ref_noscript">comments powered by duoshuo.</a></noscript>
   </div>
-</article>
+</section>
 
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/07/01/响应式Web设计总结/" class="archive-article-date">
-  <time datetime="2015-07-01T11:05:24.000Z" itemprop="datePublished">7月 1</time>
-</a>
+<!-- 多说评论框 end -->
 
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/07/01/响应式Web设计总结/">响应式Web设计总结</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/" class="archive-article-date">
-  <time datetime="2015-05-18T01:15:24.000Z" itemprop="datePublished">5月 18</time>
-</a>
-
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/05/18/百度前端技术学院_task0002 (JavaScript)/">百度前端技术学院_task0002 (JavaScript)</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" class="archive-article-date">
-  <time datetime="2015-04-25T03:45:47.000Z" itemprop="datePublished">4月 25</time>
-</a>
-
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/">Node.js+express4+MongoDB建站实例（一）</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/04/10/选项卡(DIV+CSS+JavaScript )/" class="archive-article-date">
-  <time datetime="2015-04-10T12:15:00.000Z" itemprop="datePublished">4月 10</time>
-</a>
-
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/04/10/选项卡(DIV+CSS+JavaScript )/">选项卡实现的两种方式</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/03/18/九宫格/" class="archive-article-date">
-  <time datetime="2015-03-18T12:22:24.000Z" itemprop="datePublished">3月 18</time>
-</a>
-
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/18/九宫格/">九宫格</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      
-<a href="/2015/03/15/从面向对象到原型、原型链、继承/" class="archive-article-date">
-  <time datetime="2015-03-15T02:02:00.000Z" itemprop="datePublished">3月 15</time>
-</a>
-
-
-      
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/03/15/从面向对象到原型、原型链、继承/">从面向对象到原型、原型链、继承</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-
-  
-  
-    </div></section>
-  
 </section>
         
           
@@ -420,6 +344,8 @@ var duoshuoQuery = {short_name:"starryshi"};
 
 
 <!-- 百度分享 start -->
+
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","douban","bdysc","sqq","qq","hi","baidu","huaban","youdao","sdo","mail","xg","diandian","fx","copy","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <!-- 百度分享 end -->
 
