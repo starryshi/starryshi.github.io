@@ -3,17 +3,32 @@
 <head>
   <meta charset="utf-8">
   
-  <title>tags | Starry&#39;s Blog</title>
+  <title>Starry&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://starryshi.com/tags/index.html">
+  <meta name="description" content="百度前端技术学院_task0002 (JavaScript)
+JavaScript的性能优化
+将所有的标签放到页面底部，也就是闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。
+尽可能地合并脚本。页面中的标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。
+采用无阻塞下载 JavaScript 脚本的方法：
+使用标签的 defer 属性（仅适用于 IE 和 Firefox">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Starry's Blog">
+<meta property="og:url" content="http://starryshi.com/2015/06/09/百度前端技术学院_task0002 (JavaScript)/index.html">
 <meta property="og:site_name" content="Starry's Blog">
-<meta property="og:description">
+<meta property="og:description" content="百度前端技术学院_task0002 (JavaScript)
+JavaScript的性能优化
+将所有的标签放到页面底部，也就是闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。
+尽可能地合并脚本。页面中的标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。
+采用无阻塞下载 JavaScript 脚本的方法：
+使用标签的 defer 属性（仅适用于 IE 和 Firefox">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Starry's Blog">
+<meta name="twitter:description" content="百度前端技术学院_task0002 (JavaScript)
+JavaScript的性能优化
+将所有的标签放到页面底部，也就是闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。
+尽可能地合并脚本。页面中的标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。
+采用无阻塞下载 JavaScript 脚本的方法：
+使用标签的 defer 属性（仅适用于 IE 和 Firefox">
   
     <link rel="alternative" href="/atom.xml" title="Starry&#39;s Blog" type="application/atom+xml">
   
@@ -79,11 +94,11 @@ var _hmt = _hmt || [];
 </header>
 
       <div class="outer">
-        <section id="main"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-百度前端技术学院_task0002 (JavaScript)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     
-<a href="/tags/index.html" class="article-date">
-  <time datetime="2015-04-01T12:42:42.000Z" itemprop="datePublished">2015-04-01</time>
+<a href="/2015/06/09/百度前端技术学院_task0002 (JavaScript)/" class="article-date">
+  <time datetime="2015-06-09T07:52:33.000Z" itemprop="datePublished">2015-06-09</time>
 </a>
 
 
@@ -92,27 +107,30 @@ var _hmt = _hmt || [];
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      tags
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title"><span>文章目录</span></strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#百度前端技术学院_task0002_(JavaScript)"><span class="toc-number">1.</span> <span class="toc-text">百度前端技术学院_task0002 (JavaScript)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol></li></ol>
 		
 		</div>
 		
-        
+        <h1 id="百度前端技术学院_task0002_(JavaScript)">百度前端技术学院_task0002 (JavaScript)</h1><hr>
+<h2 id="JavaScript的性能优化">JavaScript的性能优化</h2><ul>
+<li>将所有的<script>标签放到页面底部，也就是</body>闭合标签之前，这能确保在脚本执行前页面已经完成了渲染。</li>
+<li>尽可能地合并脚本。页面中的<script>标签越少，加载也就越快，响应也越迅速。无论是外链脚本还是内嵌脚本都是如此。</li>
+<li>采用无阻塞下载 JavaScript 脚本的方法：</li>
+<li>使用<script>标签的 defer 属性（仅适用于 IE 和 Firefox 3.5 以上版本）；</li>
+<li>使用动态创建的<script>元素来下载并执行代码；</li>
+<li><p>使用 XHR 对象下载 JavaScript 代码并注入页面中。</p>
+<p>详见：<a href="http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html">http://www.ibm.com/developerworks/cn/web/1308_caiys_jsload/index.html</a><br>在《高性能 JavaScript》也有详细介绍。</p>
+</li>
+</ul>
+<hr>
+<h2 id="判断各种数据类型的方法">判断各种数据类型的方法</h2><p>主要区别<code>typeof</code>与<code>instanceof</code>。<br>typeof一般只能返回如下6种结果：<br>number（任意数字或NaN）,boolean,string,function（函数）,object（NULL,数组，对象）,undefined。<br>可以使用 typeof 来获取一个变量是否存在，如 if(typeof a!=”undefined”){alert(“ok”)}，而不要去使用 if(a) 因为如果 a 不存在（未声明）则会出错<br>对于所有对象和数组，typeof运算结果都是“object”.<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>];</span><br><span class="line"><span class="keyword">var</span> o = <span class="keyword">new</span> <span class="built_in">Object</span>();</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> a); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> o); <span class="comment">//object</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Array</span>);<span class="comment">//true</span></span><br><span class="line"><span class="built_in">console</span>.log(a <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true  因为Array是object的子类。</span></span><br><span class="line"><span class="built_in">console</span>.log(o <span class="keyword">instanceof</span> <span class="built_in">Object</span>);<span class="comment">//true</span></span><br></pre></td></tr></table></figure></p>
+</script></li></ul>
       
     </div>
     <footer class="article-footer">
@@ -124,7 +142,7 @@ var _hmt = _hmt || [];
       
 	  
 <span>
-更新日期:<time datetime="2015-04-01T12:45:00.000Z" itemprop="dateModified">2015-04-01</time>
+更新日期:<time datetime="2015-06-09T07:52:34.000Z" itemprop="dateModified">2015-06-09</time>
 </span>
 
 
@@ -132,6 +150,25 @@ var _hmt = _hmt || [];
   </div>
   
     
+<nav id="article-nav">
+  
+    <a href="/2015/06/09/# 百度前端技术学院_task0002 (JavaScript)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/04/25/Node.js+express4+MongoDB建站实例（一）/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Node.js+express4+MongoDB建站实例（一）</div>
+    </a>
+  
+</nav>
+
   
 </article>
 
@@ -140,7 +177,7 @@ var _hmt = _hmt || [];
 <!-- 多说评论框 start -->
 
 <section id="comments">
-  <div class="ds-thread"  data-thread-key="/tags/index.html" data-title="tags" data-url="http://starryshi.com/tags/index.html" id="ds_thread">
+  <div class="ds-thread"  data-thread-key="/2015/06/09/百度前端技术学院_task0002 (JavaScript)/" data-title="" data-url="http://starryshi.com/2015/06/09/百度前端技术学院_task0002 (JavaScript)/" id="ds_thread">
     <noscript>Please enable JavaScript to view the <a href="//duoshuo.com/?ref_noscript">comments powered by duoshuo.</a></noscript>
   </div>
 </section>
@@ -150,6 +187,13 @@ var _hmt = _hmt || [];
 </section>
         
           
+  <div id="toc" class="toc-aside">
+  <h2 class="toc-title">文章目录</h2>
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#百度前端技术学院_task0002_(JavaScript)"><span class="toc-number">1.</span> <span class="toc-text">百度前端技术学院_task0002 (JavaScript)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#JavaScript的性能优化"><span class="toc-number">1.1.</span> <span class="toc-text">JavaScript的性能优化</span></a></li></ol></li></ol>
+    
+  </div>
+
 <aside id="sidebar">
 
   
@@ -314,6 +358,11 @@ var duoshuoQuery = {short_name:"starryshi"};
 	<script src="/js/gotop.js"></script>
 	-->
 
+
+	<a class="icon-toc-toggle" href="javascript:void(0)" title="文章目录"></a>
+	<!--
+	<script src="/js/toc_aside_toggle.js"></script>
+	-->
 
 </div>
 <script src="/js/toc_aside_toggle.js" type="text/javascript"></script>
